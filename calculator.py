@@ -1,5 +1,5 @@
-def calculate_total(pricee, quantityy):
-    return pricee * quantityy
+def calculate_total(pric1e, qu1antity):
+    return pric1e * qu1antity
 
 
 def calculate_discount(total, percentage):

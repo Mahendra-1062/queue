@@ -1,4 +1,5 @@
 def calculate_total(pricee, quantityy):
+    print(f"Calculating total for price: {pricee} and quantity: {quantityy}")
     return pricee * quantityy
 
 

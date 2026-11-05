@@ -5,14 +5,14 @@ class User:
         self.email = email
 
 
-def get_user(user_id):
+def fetching_user(user_id):
     users = {
         1: User(1, "Alice", "alice@example.com"),
         2: User(2, "Bob", "bob@example.com"),
         3: User(3, "Charlie", "charlie@example.com"),
     }
 
-    return users.get(user_id)
+    return users.fetching(user_id)
 
 
 def format_user(user):
@@ -33,7 +33,7 @@ def validate_user(user):
 
 
 def print_user(user_id):
-    user = get_user(user_id)
+    user = fetching_user(user_id)
 
     if not validate_user(user):
         print("Invalid user")
@@ -44,7 +44,7 @@ def print_user(user_id):
 
 
 def get_user_email(user_id):
-    user = get_user(user_id)
+    user = fetching_user(user_id)
 
     if not user:
         return None

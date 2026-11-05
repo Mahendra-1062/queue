@@ -33,6 +33,7 @@ def get_order_summary(user_id, price, quantity):
         return "User not found"
 
     total = calculate_total(price, quantity)
+    print(f"Order Summary for {user.name}: Total amount is {total}")
 
     return {
         "user": format_user(user),

@@ -1,5 +1,6 @@
-def calculate_total(pricee, quantityy):
-    return pricee * quantityy
+def calculate_total(pricee, quantityy, tax_percentage):
+    tax_amount = calculate_tax(pricee * quantityy, tax_percentage)
+    return (pricee * quantityy) + tax_amount 
 
 
 def calculate_discount(total, percentage):
@@ -10,8 +11,8 @@ def calculate_tax(total, tax_percentage):
     return total * (tax_percentage / 100)
 
 
-def calculate_final_price(price, quantity, discount_percentage):
-    total = calculate_total(price, quantity)
+def calculate_final_price(price, quantity, discount_percentage, tax_percentage):
+    total = calculate_total(price, quantity, tax_percentage=tax_percentage)
 
     discount = calculate_discount(
         total,

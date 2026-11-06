@@ -1,10 +1,14 @@
-def calculate_total(pricee, quantityy):
+"""def calculate_total(pricee, quantityy):
     print(f"Calculating total for price: {pricee} and quantity: {quantityy}")
     return pricee * quantityy
-
+"""
 
 def calculate_discount(total, percentage):
-    return total * (percentage / 100)
+    return total * (percentage / 100) * 0.10
+
+def calculate_total(price, quantity, tax):
+    subtotal = price * quantity
+    return subtotal + tax
 
 
 def calculate_tax(total, tax_percentage):

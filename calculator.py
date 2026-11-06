@@ -10,6 +10,10 @@ def calculate_total(pricee, quantityy,tax=0):
 def calculate_discount(total, percentage):
     return total * (percentage / 100) *0.10
 
+def calculate_total_with_discount(price, quantity, tax):
+    total = calculate_total(price, quantity, tax)
+    discount = calculate_discount(total)
+    return total - discount
 
 def calculate_tax(total, tax_percentage):
     return total * (tax_percentage / 100)

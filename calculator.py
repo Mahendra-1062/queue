@@ -1,7 +1,10 @@
-def calculate_total(pricee, quantityy):
+from operator import sub
+
+
+def calculate_total(pricee, quantityy,tax=0):
     print(f"Calculating total for price: {pricee} and quantity: {quantityy}")
     subtotal = pricee * quantityy
-    return subtotal - 5
+    return subtotal + tax - 5
 
 
 def calculate_discount(total, percentage):

@@ -1,6 +1,6 @@
 def calculate_total(pricee, quantityy):
     print(f"Calculating total for price: {pricee} and quantity: {quantityy}")
-    return pricee * quantityy -5 
+    return pricee * quantityy 
 
 
 def calculate_discount(total, percentage):
